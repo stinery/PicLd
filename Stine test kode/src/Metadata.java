@@ -3,7 +3,7 @@ import org.w3c.dom.*;
 import java.awt.*;
 import java.io.*;
 import java.net.URL;
-import java.util.*;
+import java.util.*;//Linda was here
 import javax.imageio.*;
 import javax.imageio.stream.*;
 import javax.imageio.metadata.*;
