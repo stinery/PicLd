@@ -1,6 +1,6 @@
 import org.w3c.dom.*;
 
-import java.awt.*;
+import java.awt.*;//Stine was here
 import java.io.*;
 import java.net.URL;
 import java.util.*;
