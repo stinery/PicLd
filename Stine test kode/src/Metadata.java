@@ -7,7 +7,7 @@ import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.stream.ImageInputStream;
 import java.io.File;
 import java.io.IOException;
-import java.util.Iterator;
+import java.util.Iterator;//Marius test
 
 public class Metadata {
 
