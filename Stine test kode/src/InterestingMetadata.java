@@ -59,21 +59,24 @@ public class InterestingMetadata {
                         this.dateTime = LocalDateTime.of(Integer.parseInt(tid[0]), Integer.parseInt(tid[1]), Integer.parseInt(tid[2]),
                                 Integer.parseInt(tid[3]), Integer.parseInt(tid[4]), Integer.parseInt(tid[5]));
                     }
-                        if(tag.getTagName().equals("ISO Speed Ratings")) {
+                        if(tag.getTagName().equals("File Modified Date")) {
                             this.ISO = Integer.parseInt(tag.getDescription());
                         }
-                            if(tag.getTagName().equals("GPS Latitude")) {
-                                this.GPSLatitude = tag.getDescription();
+                            if(tag.getTagName().equals("ISO Speed Ratings")) {
+                                this.ISO = Integer.parseInt(tag.getDescription());
                             }
-                                if(tag.getTagName().equals("GPS Longitude")) {
-                                    this.GPSLongitude = tag.getDescription();
+                                if(tag.getTagName().equals("GPS Latitude")) {
+                                    this.GPSLatitude = tag.getDescription();
                                 }
-                                if(tag.getTagName().equals("File Size")) {
-                                    this.fileSize = Integer.parseInt(tag.getDescription().substring(0, tag.getDescription().indexOf(' ')));
-                                }
-                                    if(tag.getTagName().equals("File Name")) {
-                                        this.fileName = tag.getDescription();
+                                    if(tag.getTagName().equals("GPS Longitude")) {
+                                        this.GPSLongitude = tag.getDescription();
                                     }
+                                    if(tag.getTagName().equals("File Size")) {
+                                        this.fileSize = Integer.parseInt(tag.getDescription().substring(0, tag.getDescription().indexOf(' ')));
+                                    }
+                                        if(tag.getTagName().equals("File Name")) {
+                                            this.fileName = tag.getDescription();
+                                        }
 
                 }
 

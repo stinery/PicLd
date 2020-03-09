@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="metadata-extractor-2.13.0" level="project" />
+    <orderEntry type="library" name="metadata-extractor-2.13.01" level="project" />
   </component>
 </module>
