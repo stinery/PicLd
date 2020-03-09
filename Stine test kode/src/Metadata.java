@@ -3,7 +3,7 @@ import org.w3c.dom.*;
 import java.awt.*;//Stine
 import java.io.*; //Chloe
 import java.net.URL;    //test hilsen lukas
-import java.util.*;
+import java.util.*;//Marius
 import javax.imageio.*;
 import javax.imageio.stream.*;
 import javax.imageio.metadata.*; // bitch bare hør her
