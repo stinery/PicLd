@@ -2,4 +2,4 @@
 The best app in the world!
 
 "I would like totally recommend PicLd"
-  - Kim k, 2020
+    Kim k, 2020
