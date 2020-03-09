@@ -5,8 +5,9 @@ import java.io.*;
 import java.net.URL;
 import java.util.*;
 import javax.imageio.*;
-import javax.imageio.stream.*; //Chloe var her
-import javax.imageio.metadata.*; //Stine is da best
+import javax.imageio.stream.*;
+import javax.imageio.metadata.*;
+//Stine mordi
 
 public class Metadata {
 
