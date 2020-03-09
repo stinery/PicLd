@@ -1,8 +1,8 @@
 import org.w3c.dom.*;
 
-import java.awt.*;
+import java.awt.*;//Stine was here
 import java.io.*;
-import java.net.URL;
+import java.net.URL;    //test hilsen lukas
 import java.util.*;
 import javax.imageio.*;
 import javax.imageio.stream.*;
