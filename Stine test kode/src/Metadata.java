@@ -96,5 +96,7 @@ public class Metadata {
         // print close tag of element
         indent(level);
         System.out.println("</" + node.getNodeName() + ">");
+
+        //tester git lmao hilsen lukas
     }
 }
