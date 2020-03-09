@@ -7,7 +7,6 @@ import java.util.*;
 import javax.imageio.*;
 import javax.imageio.stream.*;
 import javax.imageio.metadata.*;
-//Stine mordi
 
 public class Metadata {
 
