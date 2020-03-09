@@ -6,7 +6,7 @@ import java.net.URL;
 import java.util.*;
 import javax.imageio.*;
 import javax.imageio.stream.*; //Chloe var her
-import javax.imageio.metadata.*;
+import javax.imageio.metadata.*; //Stine is da best
 
 public class Metadata {
 
@@ -16,7 +16,7 @@ public class Metadata {
         for ( int i = 0; i < length; i++ )
             meta.readAndDisplayMetadata( args[i] );
        //File f = new File("C:\\Users\\stine\\Downloads\\bakgrunn.jpg");
-        //Image i = ImageIO.read(f); WE UP
+        //Image i = ImageIO.read(f);
         meta.readAndDisplayMetadata("C:\\Users\\stine\\Downloads\\aker.jpg");
     }
 
