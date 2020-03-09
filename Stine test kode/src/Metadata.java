@@ -20,7 +20,6 @@ public class Metadata {
         //Image i = ImageIO.read(f);
         meta.readAndDisplayMetadata("C:\\Users\\stine\\Downloads\\aker.jpg");
     }
-// ole
 
     void readAndDisplayMetadata(String fileName) {
         try {
