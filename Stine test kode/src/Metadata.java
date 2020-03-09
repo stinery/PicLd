@@ -1,12 +1,13 @@
-import org.w3c.dom.*;
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
 
-import java.awt.*;//Stine
-import java.io.*; //Chloe
-import java.net.URL;    //test hilsen lukas
-import java.util.*;//Marius
-import javax.imageio.*;
-import javax.imageio.stream.*;
-import javax.imageio.metadata.*; // bitch bare hør her
+import javax.imageio.ImageIO;
+import javax.imageio.ImageReader;
+import javax.imageio.metadata.IIOMetadata;
+import javax.imageio.stream.ImageInputStream;
+import java.io.File;
+import java.io.IOException;
+import java.util.Iterator;
 
 public class Metadata {
 
@@ -19,7 +20,7 @@ public class Metadata {
         //Image i = ImageIO.read(f);
         meta.readAndDisplayMetadata("C:\\Users\\stine\\Downloads\\aker.jpg");
     }
-
+// ole
 
     void readAndDisplayMetadata(String fileName) {
         try {
