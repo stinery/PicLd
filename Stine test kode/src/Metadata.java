@@ -1,7 +1,7 @@
 import org.w3c.dom.*;
 
 import java.awt.*;
-import java.io.*;
+import java.io.*; //Chloe
 import java.net.URL;    //test hilsen lukas
 import java.util.*;
 import javax.imageio.*;
