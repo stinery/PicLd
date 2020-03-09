@@ -5,7 +5,7 @@ import java.io.*;
 import java.net.URL;
 import java.util.*;
 import javax.imageio.*;
-import javax.imageio.stream.*; //Chloe var her
+import javax.imageio.stream.*;
 import javax.imageio.metadata.*;
 
 public class Metadata {
