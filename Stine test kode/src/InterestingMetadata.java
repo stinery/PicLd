@@ -60,7 +60,7 @@ public class InterestingMetadata {
                                 Integer.parseInt(tid[3]), Integer.parseInt(tid[4]), Integer.parseInt(tid[5]));
                     }
                         if(tag.getTagName().equals("File Modified Date")) {
-                            this.ISO = Integer.parseInt(tag.getDescription());
+                            //dateTime = file.lastModified();
                         }
                             if(tag.getTagName().equals("ISO Speed Ratings")) {
                                 this.ISO = Integer.parseInt(tag.getDescription());
