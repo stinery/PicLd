@@ -5,51 +5,51 @@ import java.util.Optional;
 
 public class Album { //comment
     private String name;
-    private List<PictureInfo> album;
+    private List<PictureInfo> pictures;
 
     public Album(String name) {
         this.name = name;
-        this.album = new ArrayList<PictureInfo>();
+        this.pictures = new ArrayList<PictureInfo>();
     }
 
     public void addPicture(String filePath) {
         PictureInfo p = new PictureInfo(filePath);
-        this.album.add(p);
+        this.pictures.add(p);
     }
 
     public void removePicture(String filePath) {
-        Optional<PictureInfo> o = album.stream().filter(x -> x.getInterestingMetadata().getFilepath().equals(filePath)).findFirst();
+        Optional<PictureInfo> o = pictures.stream().filter(x -> x.getInterestingMetadata().getFilepath().equals(filePath)).findFirst();
         if (o.isPresent()) {
-            album.remove(o);
+            pictures.remove(o);
         }
     }
 
     public void sortIso() {
-        album.sort(Comparator.comparing(x -> x.getInterestingMetadata().getISO()));
+        pictures.sort(Comparator.comparing(x -> x.getInterestingMetadata().getISO()));
     }
 
     public void sortIsoReversed() {
-        album.sort(Comparator.comparing(x -> x.getInterestingMetadata().getISO()));
+        pictures.sort(Comparator.comparing(x -> x.getInterestingMetadata().getISO()));
     }
 
     public void sortDate() {
-        album.sort(Comparator.comparing(x -> x.getInterestingMetadata().getDateTime()));
+        pictures.sort(Comparator.comparing(x -> x.getInterestingMetadata().getDateTime()));
     }
 
     public void sortExposureTime() {
-        album.sort(Comparator.comparing(x -> x.getInterestingMetadata().getExposureTime()));
+        pictures.sort(Comparator.comparing(x -> x.getInterestingMetadata().getExposureTime()));
     }
 
     public void sortFileSize() {
-        album.sort(Comparator.comparing(x -> x.getInterestingMetadata().getFileSize()));
+        pictures.sort(Comparator.comparing(x -> x.getInterestingMetadata().getFileSize()));
     }
 
     public void sortFileName() {
-        album.sort(Comparator.comparing(x -> x.getInterestingMetadata().getFileName()));
+        pictures.sort(Comparator.comparing(x -> x.getInterestingMetadata().getFileName()));
     }
 
     public void sortFlashUsed() {
-        album.sort(Comparator.comparing(x -> x.getInterestingMetadata().isFlashUsed()));
+        pictures.sort(Comparator.comparing(x -> x.getInterestingMetadata().isFlashUsed()));
     }
 
 
