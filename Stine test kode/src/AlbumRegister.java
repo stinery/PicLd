@@ -4,6 +4,7 @@ import java.util.Optional;
 
 public class AlbumRegister {
     private List<Album> albums;
+    private Album allPhotos;
 
     public AlbumRegister() {
         albums = new ArrayList<Album>();
@@ -24,5 +25,6 @@ public class AlbumRegister {
 
     public void addPhoto(String albumName, String filePath) {
         findAlbumByName(albumName).addPicture(filePath);
+
     }
 }

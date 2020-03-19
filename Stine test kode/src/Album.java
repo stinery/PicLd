@@ -20,9 +20,21 @@ public class Album { //comment
         return pictures;
     }
 
-    public void addPicture(String filePath) {
+    private boolean isRegistered(String filePath) {
+        Optional<PictureInfo> o = pictures.stream().filter(x -> x.getInterestingMetadata().getFilepath().equals(filePath)).findFirst();
+        if(o.isPresent()) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean addPicture(String filePath) {
+        if(isRegistered(filePath)) {
+            return false;
+        }
         PictureInfo p = new PictureInfo(filePath);
         this.pictures.add(p);
+        return true;
     }
 
     public void removePicture(String filePath) {
