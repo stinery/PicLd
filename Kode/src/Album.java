@@ -12,6 +12,14 @@ public class Album { //comment
         this.pictures = new ArrayList<PictureInfo>();
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public List<PictureInfo> getPictures() {
+        return pictures;
+    }
+
     public void addPicture(String filePath) {
         PictureInfo p = new PictureInfo(filePath);
         this.pictures.add(p);
