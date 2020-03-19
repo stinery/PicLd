@@ -1,3 +1,5 @@
+package forkastet;
+
 import com.drew.imaging.ImageMetadataReader;
 import com.drew.imaging.ImageProcessingException;
 import com.drew.metadata.Directory;
@@ -10,7 +12,7 @@ import java.io.IOException;
 
 public class Gauder {
     public static void main(String[] args) {
-        File file = new File("C:/Users/olelo/Downloads/blitz.jpg");
+        File file = new File("C:/Users/olelo/OneDrive/Bilder/Kamerabilder/WIN_20200308_21_00_11_Pro.jpg");
         try {
             Metadata metadata = ImageMetadataReader.readMetadata(file);
             ExifSubIFDDirectory subIfd = metadata.getFirstDirectoryOfType(ExifSubIFDDirectory.class);
