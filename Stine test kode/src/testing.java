@@ -1,6 +1,6 @@
 public class testing { //Testing
     public static void main(String[] args) {
-        InterestingMetadata p = new InterestingMetadata("C:/Users/olelo/OneDrive/Bilder/trumpmajor.jpg");
+        InterestingMetadata yo = new InterestingMetadata("C:/Users/olelo/OneDrive/Bilder/Kamerabilder/WIN_20200308_21_00_11_Pro.jpg");
         int i = 0;
     }
 }
