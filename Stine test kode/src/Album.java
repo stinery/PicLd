@@ -28,13 +28,12 @@ public class Album { //comment
         return false;
     }
 
-    public boolean addPicture(String filePath) {
+    public void addPicture(String filePath) {
         if(isRegistered(filePath)) {
-            return false;
+            throw new IllegalArgumentException("Bildet er allerede registert");
         }
         PictureInfo p = new PictureInfo(filePath);
         this.pictures.add(p);
-        return true;
     }
 
     public void removePicture(String filePath) {

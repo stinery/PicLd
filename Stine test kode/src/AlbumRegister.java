@@ -15,7 +15,11 @@ public class AlbumRegister {
         albums.add(a);
     }
 
-    public Album findAlbumByName(String albumName) {
+    public void removeAlbum(String name) {
+        albums.remove(findAlbumByName(name));
+    }
+
+    private Album findAlbumByName(String albumName) {
         Optional<Album> a = albums.stream().filter(x -> x.getName().equals(albumName)).findFirst();
         if(a.isPresent()){
             return a.get();
@@ -25,6 +29,6 @@ public class AlbumRegister {
 
     public void addPhoto(String albumName, String filePath) {
         findAlbumByName(albumName).addPicture(filePath);
-
+        allPhotos.addPicture(filePath);
     }
 }
