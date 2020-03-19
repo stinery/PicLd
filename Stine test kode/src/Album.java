@@ -4,9 +4,11 @@ import java.util.List;
 import java.util.Optional;
 
 public class Album { //comment
+    private String name;
     private List<PictureInfo> album;
 
-    public Album() {
+    public Album(String name) {
+        this.name = name;
         this.album = new ArrayList<PictureInfo>();
     }
 
@@ -32,6 +34,22 @@ public class Album { //comment
 
     public void sortDate() {
         album.sort(Comparator.comparing(x -> x.getInterestingMetadata().getDateTime()));
+    }
+
+    public void sortExposureTime() {
+        album.sort(Comparator.comparing(x -> x.getInterestingMetadata().getExposureTime()));
+    }
+
+    public void sortFileSize() {
+        album.sort(Comparator.comparing(x -> x.getInterestingMetadata().getFileSize()));
+    }
+
+    public void sortFileName() {
+        album.sort(Comparator.comparing(x -> x.getInterestingMetadata().getFileName()));
+    }
+
+    public void sortFlashUsed() {
+        album.sort(Comparator.comparing(x -> x.getInterestingMetadata().isFlashUsed()));
     }
 
 
