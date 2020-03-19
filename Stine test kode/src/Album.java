@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Album {
+public class Album { //comment
     private List<PictureInfo> album;
 
 }
